@@ -15,7 +15,7 @@ struct PoofExample: View, Example {
         }
         .defaultBackground()
         .onTapGesture {
-            withAnimation(.spring(dampingFraction: 1)) {
+            withAnimation {
                 isVisible.toggle()
             }
         }
