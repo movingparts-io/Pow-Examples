@@ -27,5 +27,6 @@ struct VanishExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible)
     }
 }

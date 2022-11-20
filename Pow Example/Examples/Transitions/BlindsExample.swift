@@ -18,5 +18,6 @@ struct BlindsExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible)
     }
 }

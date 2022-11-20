@@ -56,4 +56,15 @@ extension View {
             .background(Rectangle().fill(.background).ignoresSafeArea())
             .contentShape(Rectangle())
     }
+
+    func autotoggle(_ binding: Binding<Bool>, with animation: Animation = .default) -> some View {
+        self
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    withAnimation(animation) {
+                        binding.wrappedValue = true
+                    }
+                }
+            }
+    }
 }

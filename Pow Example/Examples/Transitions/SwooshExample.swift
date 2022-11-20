@@ -26,5 +26,6 @@ struct SwooshExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible, with: .spring())
     }
 }

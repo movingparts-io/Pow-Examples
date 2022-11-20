@@ -33,5 +33,6 @@ struct BoingExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible)
     }
 }

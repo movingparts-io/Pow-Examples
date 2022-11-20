@@ -18,5 +18,6 @@ struct FlickerExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible)
     }
 }

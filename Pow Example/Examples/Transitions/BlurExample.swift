@@ -18,5 +18,6 @@ struct BlurExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible)
     }
 }

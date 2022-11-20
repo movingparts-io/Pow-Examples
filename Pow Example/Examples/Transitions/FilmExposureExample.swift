@@ -29,5 +29,6 @@ struct FilmExposureExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible, with: .easeInOut(duration: 1.8))
     }
 }

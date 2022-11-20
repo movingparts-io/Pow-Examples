@@ -18,5 +18,6 @@ struct AnvilExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible)
     }
 }

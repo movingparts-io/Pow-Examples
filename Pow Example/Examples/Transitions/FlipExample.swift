@@ -26,5 +26,6 @@ struct FlipExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible, with: .interactiveSpring(response: 0.4, dampingFraction: 0.4, blendDuration: 2.45))
     }
 }

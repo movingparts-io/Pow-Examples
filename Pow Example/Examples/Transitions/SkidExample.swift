@@ -33,5 +33,6 @@ struct SkidExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible)
     }
 }

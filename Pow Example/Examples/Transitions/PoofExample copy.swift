@@ -19,5 +19,6 @@ struct PoofExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible)
     }
 }

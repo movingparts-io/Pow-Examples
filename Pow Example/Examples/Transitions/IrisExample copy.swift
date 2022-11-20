@@ -19,5 +19,6 @@ struct IrisExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible, with: .spring(dampingFraction: 1))
     }
 }

@@ -33,5 +33,6 @@ struct PopExample: View, Example {
                 isFavorited.toggle()
             }
         }
+        .autotoggle($isFavorited, with: .spring(dampingFraction: 1))
     }
 }

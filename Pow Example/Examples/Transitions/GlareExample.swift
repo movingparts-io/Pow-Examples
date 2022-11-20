@@ -28,5 +28,6 @@ struct GlareExample: View, Example {
                 isVisible.toggle()
             }
         }
+        .autotoggle($isVisible)
     }
 }
