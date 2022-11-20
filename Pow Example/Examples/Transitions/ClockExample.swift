@@ -20,4 +20,8 @@ struct ClockExample: View, Example {
         }
         .autotoggle($isVisible, with: .spring(dampingFraction: 1))
     }
+
+    static var icon: Image? {
+        Image(systemName: "clock")
+    }
 }

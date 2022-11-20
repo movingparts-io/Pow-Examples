@@ -28,4 +28,8 @@ struct SwooshExample: View, Example {
         }
         .autotoggle($isVisible, with: .spring())
     }
+
+    static var icon: Image? {
+        Image(systemName: "skew")
+    }
 }

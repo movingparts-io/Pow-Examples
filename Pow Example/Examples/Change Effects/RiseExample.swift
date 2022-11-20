@@ -52,4 +52,8 @@ struct RiseExample: View, Example {
             - `particles`: The particles to emit.
         """)
     }
+
+    static var icon: Image? {
+        Image(systemName: "dot.radiowaves.up.forward")
+    }
 }

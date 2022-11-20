@@ -21,4 +21,8 @@ struct MoveExample: View, Example {
         }
         .autotoggle($isVisible, with: .spring(dampingFraction: 1))
     }
+
+    static var icon: Image? {
+        Image(systemName: "arrow.up.left.and.down.right.and.arrow.up.right.and.down.left")
+    }
 }

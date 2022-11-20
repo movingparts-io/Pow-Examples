@@ -35,4 +35,8 @@ struct PopExample: View, Example {
         }
         .autotoggle($isFavorited, with: .spring(dampingFraction: 1))
     }
+
+    static var icon: Image? {
+        Image(systemName: "rays")
+    }
 }

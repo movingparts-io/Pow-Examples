@@ -42,5 +42,8 @@ struct SpinExample: View, Example {
             - `perspective`: The relative vanishing point with a default of 1 / 6 for this rotation.
         """)
     }
-}
 
+    static var icon: Image? {
+        Image(systemName: "arrow.clockwise")
+    }
+}

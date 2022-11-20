@@ -23,4 +23,8 @@ struct JumpExample: View, Example {
         - `height`: The height of the jump.
         """)
     }
+
+    static var icon: Image? {
+        Image(systemName: "figure.jumprope")
+    }
 }

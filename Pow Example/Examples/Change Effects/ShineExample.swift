@@ -55,4 +55,8 @@ struct ShineExample: View, Example {
             - `duration`: The duration of the animation.
         """)
     }
+
+    static var icon: Image? {
+        Image(systemName: "sparkles")
+    }
 }

@@ -28,4 +28,8 @@ struct FlipExample: View, Example {
         }
         .autotoggle($isVisible, with: .interactiveSpring(response: 0.4, dampingFraction: 0.4, blendDuration: 2.45))
     }
+
+    static var icon: Image? {
+        Image(systemName: "rotate.3d")
+    }
 }

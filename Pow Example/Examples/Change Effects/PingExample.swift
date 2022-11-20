@@ -46,6 +46,10 @@ struct PingExample: View, Example {
           - `count`: The number of shapes to emit.
         """)
     }
+
+    static var icon: Image? {
+        Image(systemName: "dot.radiowaves.left.and.right")
+    }
 }
 
 extension VerticalAlignment {

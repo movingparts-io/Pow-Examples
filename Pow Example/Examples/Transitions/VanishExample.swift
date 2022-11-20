@@ -29,4 +29,8 @@ struct VanishExample: View, Example {
         }
         .autotoggle($isVisible)
     }
+
+    static var icon: Image? {
+        Image(systemName: "circle.dotted")
+    }
 }

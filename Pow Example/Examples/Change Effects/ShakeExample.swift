@@ -43,4 +43,8 @@ struct ShakeExample: View, Example {
         - `rate`: The rate of the shake.
         """)
     }
+
+    static var icon: Image? {
+        Image(systemName: "arrow.left.arrow.right")
+    }
 }

@@ -20,4 +20,8 @@ struct BlurExample: View, Example {
         }
         .autotoggle($isVisible)
     }
+
+    static var icon: Image? {
+        Image(systemName: "drop")
+    }
 }

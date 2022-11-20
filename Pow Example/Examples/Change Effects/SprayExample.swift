@@ -62,4 +62,8 @@ struct SprayExample: View, Example {
             - `particles`: The particles to emit.
         """)
     }
+
+    static var icon: Image? {
+        Image(systemName: "party.popper")
+    }
 }
