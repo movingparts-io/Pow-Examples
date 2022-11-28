@@ -130,8 +130,6 @@ private struct MinimalPCG {
     init(string: String) {
         self.state = string.utf8.reduce(0.0) { a, b in a + (Double(b) * .pi) }.bitPattern
         self.inc = (Double(string.count) * .pi).bitPattern
-
-        print(state, inc)
     }
 
     init(state: UInt64, inc: UInt64) {
