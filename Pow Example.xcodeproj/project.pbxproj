@@ -25,8 +25,8 @@
 		546A29B2292A3ED800A80DE2 /* GlareExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29B1292A3ED800A80DE2 /* GlareExample.swift */; };
 		546A29B4292A401500A80DE2 /* PopExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29B3292A401500A80DE2 /* PopExample.swift */; };
 		546A29B6292A406E00A80DE2 /* IrisExample copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29B5292A406E00A80DE2 /* IrisExample copy.swift */; };
-		546A29B8292A40B000A80DE2 /* MoveExample copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29B7292A40AF00A80DE2 /* MoveExample copy.swift */; };
-		546A29BA292A40D800A80DE2 /* PoofExample copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29B9292A40D800A80DE2 /* PoofExample copy.swift */; };
+		546A29B8292A40B000A80DE2 /* MoveExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29B7292A40AF00A80DE2 /* MoveExample.swift */; };
+		546A29BA292A40D800A80DE2 /* PoofExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29B9292A40D800A80DE2 /* PoofExample.swift */; };
 		546A29BC292A414A00A80DE2 /* SnapshotExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29BB292A414A00A80DE2 /* SnapshotExample.swift */; };
 		546A29BE292A41CF00A80DE2 /* VanishExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29BD292A41CF00A80DE2 /* VanishExample.swift */; };
 		546A29C0292A420F00A80DE2 /* SwooshExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29BF292A420E00A80DE2 /* SwooshExample.swift */; };
@@ -60,8 +60,8 @@
 		546A29B1292A3ED800A80DE2 /* GlareExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlareExample.swift; sourceTree = "<group>"; };
 		546A29B3292A401500A80DE2 /* PopExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopExample.swift; sourceTree = "<group>"; };
 		546A29B5292A406E00A80DE2 /* IrisExample copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IrisExample copy.swift"; sourceTree = "<group>"; };
-		546A29B7292A40AF00A80DE2 /* MoveExample copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoveExample copy.swift"; sourceTree = "<group>"; };
-		546A29B9292A40D800A80DE2 /* PoofExample copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PoofExample copy.swift"; sourceTree = "<group>"; };
+		546A29B7292A40AF00A80DE2 /* MoveExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveExample.swift; sourceTree = "<group>"; };
+		546A29B9292A40D800A80DE2 /* PoofExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoofExample.swift; sourceTree = "<group>"; };
 		546A29BB292A414A00A80DE2 /* SnapshotExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotExample.swift; sourceTree = "<group>"; };
 		546A29BD292A41CF00A80DE2 /* VanishExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanishExample.swift; sourceTree = "<group>"; };
 		546A29BF292A420E00A80DE2 /* SwooshExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwooshExample.swift; sourceTree = "<group>"; };
@@ -150,8 +150,8 @@
 				546A29AD292A3D8900A80DE2 /* FlipExample.swift */,
 				546A29B1292A3ED800A80DE2 /* GlareExample.swift */,
 				546A29B5292A406E00A80DE2 /* IrisExample copy.swift */,
-				546A29B7292A40AF00A80DE2 /* MoveExample copy.swift */,
-				546A29B9292A40D800A80DE2 /* PoofExample copy.swift */,
+				546A29B7292A40AF00A80DE2 /* MoveExample.swift */,
+				546A29B9292A40D800A80DE2 /* PoofExample.swift */,
 				546A29B3292A401500A80DE2 /* PopExample.swift */,
 				546A29CF292A676200A80DE2 /* SkidExample.swift */,
 				546A29BB292A414A00A80DE2 /* SnapshotExample.swift */,
@@ -255,7 +255,7 @@
 				546A298C292A31BB00A80DE2 /* ExampleList.swift in Sources */,
 				546A29CE292A591F00A80DE2 /* ShineExample.swift in Sources */,
 				546A29C0292A420F00A80DE2 /* SwooshExample.swift in Sources */,
-				546A29BA292A40D800A80DE2 /* PoofExample copy.swift in Sources */,
+				546A29BA292A40D800A80DE2 /* PoofExample.swift in Sources */,
 				546A29B2292A3ED800A80DE2 /* GlareExample.swift in Sources */,
 				546A29B6292A406E00A80DE2 /* IrisExample copy.swift in Sources */,
 				546A29A4292A34A600A80DE2 /* ClockExample.swift in Sources */,
@@ -280,7 +280,7 @@
 				546A29B0292A3DA800A80DE2 /* FlickerExample.swift in Sources */,
 				546A29D4292A6B1200A80DE2 /* SprayExample.swift in Sources */,
 				546A29CA292A4DBD00A80DE2 /* RiseExample.swift in Sources */,
-				546A29B8292A40B000A80DE2 /* MoveExample copy.swift in Sources */,
+				546A29B8292A40B000A80DE2 /* MoveExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
