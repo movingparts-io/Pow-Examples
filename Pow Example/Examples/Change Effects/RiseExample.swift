@@ -53,6 +53,8 @@ struct RiseExample: View, Example {
         """)
     }
 
+    static let localPath = LocalPath()
+    
     static var icon: Image? {
         Image(systemName: "arrow.up.and.down.and.sparkles")
     }

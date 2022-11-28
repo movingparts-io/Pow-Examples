@@ -57,6 +57,8 @@ struct ShineExample: View, Example {
         """)
     }
 
+    static let localPath = LocalPath()
+    
     static var icon: Image? {
         Image(systemName: "sparkles")
     }

@@ -9,6 +9,8 @@ protocol Example: View {
     static var description: Description { get }
 
     static var icon: Image? { get }
+
+    static var localPath: LocalPath { get }
 }
 
 extension Example {
@@ -31,6 +33,8 @@ extension Example {
                 Self()
                     .background()
                     .toolbar {
+                        GithubButton(Self.localPath)
+
                         if type(of: Self.description) != EmptyView.self {
                             InfoButton(type: Self.self)
                         }
@@ -115,6 +119,18 @@ struct IconView<Content: View>: View {
                 .strokeBorder(.white.opacity(0.1), lineWidth: 0.5)
                 .blendMode(.plusLighter)
         }
+    }
+}
+
+struct LocalPath {
+    var path: String
+
+    init(path: String = #file) {
+        self.path = path
+    }
+
+    var url: URL {
+        URL(fileURLWithPath: path)
     }
 }
 

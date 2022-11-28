@@ -29,6 +29,8 @@ struct WipeExample: View, Example {
         .autotoggle($isVisible, with: .spring(dampingFraction: 1))
     }
 
+    static let localPath = LocalPath()
+    
     static var icon: Image? {
         Image(systemName: "windshield.rear.and.wiper")
     }

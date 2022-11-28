@@ -21,6 +21,8 @@ struct ClockExample: View, Example {
         .autotoggle($isVisible, with: .spring(dampingFraction: 1))
     }
 
+    static let localPath = LocalPath()
+
     static var icon: Image? {
         Image(systemName: "clock")
     }

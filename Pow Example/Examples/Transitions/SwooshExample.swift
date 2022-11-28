@@ -29,6 +29,8 @@ struct SwooshExample: View, Example {
         .autotoggle($isVisible, with: .spring())
     }
 
+    static let localPath = LocalPath()
+    
     static var icon: Image? {
         Image(systemName: "skew")
     }

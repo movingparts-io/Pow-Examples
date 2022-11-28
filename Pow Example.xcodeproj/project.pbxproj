@@ -39,6 +39,7 @@
 		546A29D0292A676200A80DE2 /* SkidExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29CF292A676200A80DE2 /* SkidExample.swift */; };
 		546A29D2292A68E100A80DE2 /* SpinExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29D1292A68E100A80DE2 /* SpinExample.swift */; };
 		546A29D4292A6B1200A80DE2 /* SprayExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29D3292A6B1200A80DE2 /* SprayExample.swift */; };
+		54A962302934CC4400BBD5FE /* GithubButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A9622F2934CC4400BBD5FE /* GithubButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		546A29CF292A676200A80DE2 /* SkidExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkidExample.swift; sourceTree = "<group>"; };
 		546A29D1292A68E100A80DE2 /* SpinExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinExample.swift; sourceTree = "<group>"; };
 		546A29D3292A6B1200A80DE2 /* SprayExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayExample.swift; sourceTree = "<group>"; };
+		54A9622F2934CC4400BBD5FE /* GithubButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubButton.swift; sourceTree = "<group>"; };
 		54D37CAD292F9C4A00788E8A /* Pow-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Pow-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				546A2989292A31BB00A80DE2 /* PowExampleApp.swift */,
 				546A298B292A31BB00A80DE2 /* ExampleList.swift */,
 				546A299D292A335600A80DE2 /* PlaceholderView.swift */,
+				54A9622F2934CC4400BBD5FE /* GithubButton.swift */,
 				546A299C292A332C00A80DE2 /* Examples */,
 				546A298D292A31BC00A80DE2 /* Assets.xcassets */,
 				546A298F292A31BC00A80DE2 /* Preview Content */,
@@ -270,6 +273,7 @@
 				546A29AA292A397100A80DE2 /* BlurExample.swift in Sources */,
 				546A29A0292A341700A80DE2 /* Example.swift in Sources */,
 				546A29BC292A414A00A80DE2 /* SnapshotExample.swift in Sources */,
+				54A962302934CC4400BBD5FE /* GithubButton.swift in Sources */,
 				546A29B4292A401500A80DE2 /* PopExample.swift in Sources */,
 				546A29CC292A559A00A80DE2 /* ShakeExample.swift in Sources */,
 				546A29AE292A3D8900A80DE2 /* FlipExample.swift in Sources */,
@@ -413,6 +417,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Pow-Example-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Pow;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -444,6 +449,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Pow-Example-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Pow;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

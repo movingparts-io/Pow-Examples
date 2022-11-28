@@ -21,6 +21,8 @@ struct AnvilExample: View, Example {
         .autotoggle($isVisible)
     }
 
+    static let localPath = LocalPath()
+
     static var icon: Image? {
         Image(systemName: "scalemass")
     }

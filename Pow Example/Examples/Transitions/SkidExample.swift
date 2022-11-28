@@ -36,6 +36,8 @@ struct SkidExample: View, Example {
         .autotoggle($isVisible)
     }
 
+    static let localPath = LocalPath()
+
     static var icon: Image? {
         Image(systemName: "arrow.left.and.right.square")
     }

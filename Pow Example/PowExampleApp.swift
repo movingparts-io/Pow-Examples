@@ -24,6 +24,10 @@ struct PowExampleApp: App {
                     VStack(alignment: .leading, spacing: 12) {
                         Text(t.type.title).font(.title.bold())
 
+                        GithubButton(t.type.localPath)
+                            .controlSize(.small)
+                            .buttonStyle(.bordered)
+
                         t.type.erasedDescription
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
