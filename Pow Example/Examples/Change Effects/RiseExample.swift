@@ -6,7 +6,7 @@ struct RiseExample: View, Example {
     var changes: Int = 0
 
     var body: some View {
-        let colors = [Color.red, .orange, .green, .blue, .indigo, .purple]
+        let colors = [Color.red, .orange, .yellow, .green, .blue, .indigo, .purple]
 
         ZStack {
             Label {
