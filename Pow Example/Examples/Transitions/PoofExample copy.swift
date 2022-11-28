@@ -10,7 +10,12 @@ struct PoofExample: View, Example {
             if isVisible {
                 PlaceholderView()
                     .compositingGroup()
-                    .transition(.movingParts.poof)
+                    // Assign a random ID so that quick re-insertion will not
+                    // play the poof transition backwards.
+                    .id(UUID())
+                    .transition(
+                        .asymmetric(insertion: .opacity, removal: .movingParts.poof)
+                    )
             }
         }
         .defaultBackground()
