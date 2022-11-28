@@ -7,10 +7,6 @@ struct ExampleList: View {
         List {
             Section {
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("Pow Examples")
-                        .font(.headline)
-                        .foregroundColor(.primary)
-
                     Text("This is the official example app for Pow, the Surprise and Delight framework for SwiftUI.")
 
                     Text("Tap the individual examples to see the effects and transitions in action.")
@@ -80,7 +76,7 @@ struct ExampleList: View {
                 Text("Transitions use the existing SwiftUI `.transition(_:)` API.")
             }
         }
-        .navigationTitle("Examples")
+        .navigationTitle("Pow Examples")
     }
 }
 
