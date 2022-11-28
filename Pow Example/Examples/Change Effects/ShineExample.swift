@@ -34,6 +34,7 @@ struct ShineExample: View, Example {
                 }
                 .buttonStyle(.borderedProminent)
             }
+            .frame(maxWidth: 320)
             .padding(24)
         }
         .defaultBackground()

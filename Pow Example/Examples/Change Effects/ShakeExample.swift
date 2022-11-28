@@ -31,6 +31,7 @@ struct ShakeExample: View, Example {
                     Text("Submit the form to see the effect.").font(.caption).foregroundColor(.secondary)
                 }
             }
+            .frame(maxWidth: 320)
             .padding(24)
         }
         .defaultBackground()
