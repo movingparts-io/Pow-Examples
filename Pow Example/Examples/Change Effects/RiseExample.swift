@@ -54,6 +54,6 @@ struct RiseExample: View, Example {
     }
 
     static var icon: Image? {
-        Image(systemName: "dot.radiowaves.up.forward")
+        Image(systemName: "arrow.up.and.down.and.sparkles")
     }
 }
