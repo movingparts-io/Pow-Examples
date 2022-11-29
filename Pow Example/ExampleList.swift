@@ -34,6 +34,14 @@ struct ExampleList: View {
             }
 
             Section  {
+                SocialFeedExample.navigationLink
+            } header: {
+                Label("Screens", systemImage: "iphone")
+            } footer: {
+                Text("Pre-composed screens that show how to use Pow in context. Use them as inspiration for your app.")
+            }
+
+            Section  {
                 JumpExample.navigationLink
                 PingExample.navigationLink
                 RiseExample.navigationLink
@@ -122,6 +130,8 @@ struct InfoButton<T: Example>: View {
 
 struct ExampleList_Previews: PreviewProvider {
     static var previews: some View {
-        ExampleList()
+        NavigationStack {
+            ExampleList()
+        }
     }
 }
