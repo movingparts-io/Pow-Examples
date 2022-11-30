@@ -11,7 +11,7 @@ struct ExampleList: View {
 
                     Text("Tap the individual examples to see the effects and transitions in action.")
 
-                    Text("**Note:** While this app supports requires iOS 16, Pow itself supports iOS 15 and above.")
+                    Text("**Note:** While this app requires iOS 16, Pow itself supports iOS 15 and above.")
                 }
                 .font(.subheadline.leading(.loose))
                 .foregroundColor(.primary)
