@@ -5,6 +5,8 @@ protocol Example: View {
 
     init()
 
+    static var title: String { get }
+
     @ViewBuilder
     static var description: Description { get }
 
