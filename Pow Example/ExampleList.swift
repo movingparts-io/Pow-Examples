@@ -13,8 +13,8 @@ struct ExampleList: View {
 
                     Text("**Note:** While this app supports requires iOS 16, Pow itself supports iOS 15 and above.")
                 }
-                .font(.body.leading(.loose))
-                .foregroundColor(.secondary)
+                .font(.subheadline.leading(.loose))
+                .foregroundColor(.primary)
 
                 Link(destination: URL(string: "https://movingparts.io/pow")!) {
                     ViewThatFits {
