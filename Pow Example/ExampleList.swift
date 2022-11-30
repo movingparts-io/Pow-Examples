@@ -10,6 +10,8 @@ struct ExampleList: View {
                     Text("This is the official example app for Pow, the Surprise and Delight framework for SwiftUI.")
 
                     Text("Tap the individual examples to see the effects and transitions in action.")
+
+                    Text("**Note:** While this app supports requires iOS 16, Pow itself supports iOS 15 and above.")
                 }
                 .font(.body.leading(.loose))
                 .foregroundColor(.secondary)
