@@ -12,19 +12,34 @@ struct BoingExample: View, Example {
 
                 PlaceholderView()
                     .frame(maxWidth: 120, maxHeight: 120)
-                    .transition(.movingParts.boing(edge: .top).animation(defaultSpring))
+                    .transition(
+                        .asymmetric(
+                            insertion: .movingParts.boing(edge: .top).animation(defaultSpring),
+                            removal: .movingParts.boing(edge: .top).animation(defaultSpring).combined(with: .opacity.animation(.easeInOut(duration: 0.2)))
+                        )
+                    )
 
                 let mediumSpring = Animation.interactiveSpring(dampingFraction: 0.5)
 
                 PlaceholderView()
                     .frame(maxWidth: 120, maxHeight: 120)
-                    .transition(.movingParts.boing(edge: .top).animation(mediumSpring))
+                    .transition(
+                        .asymmetric(
+                            insertion: .movingParts.boing(edge: .top).animation(mediumSpring),
+                            removal: .movingParts.boing(edge: .top).animation(mediumSpring).combined(with: .opacity.animation(.easeInOut(duration: 0.2)))
+                        )
+                    )
 
                 let looseSpring = Animation.interpolatingSpring(stiffness: 100, damping: 8)
 
                 PlaceholderView()
                     .frame(maxWidth: 120, maxHeight: 120)
-                    .transition(.movingParts.boing(edge: .top).animation(looseSpring))
+                    .transition(
+                        .asymmetric(
+                            insertion: .movingParts.boing(edge: .top).animation(looseSpring),
+                            removal: .movingParts.boing(edge: .top).animation(looseSpring).combined(with: .opacity.animation(.easeInOut(duration: 0.2)))
+                        )
+                    )
             }
         }
         .defaultBackground()

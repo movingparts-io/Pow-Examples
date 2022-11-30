@@ -10,7 +10,7 @@ struct MoveExample: View, Example {
             if isVisible {
                 PlaceholderView()
                     .compositingGroup()
-                    .transition(.movingParts.move(angle: .degrees(225)))
+                    .transition(.movingParts.move(angle: .degrees(225)).combined(with: .opacity))
             }
         }
         .defaultBackground()

@@ -9,7 +9,7 @@ struct BlurExample: View, Example {
         ZStack {
             if isVisible {
                 PlaceholderView()
-                    .transition(.movingParts.blur)
+                    .transition(.movingParts.blur.combined(with: .opacity))
             }
         }
         .defaultBackground()

@@ -9,7 +9,7 @@ struct SwooshExample: View, Example {
         ZStack {
             if isVisible {
                 PlaceholderView()
-                    .transition(.movingParts.swoosh)
+                    .transition(.movingParts.swoosh.combined(with: .opacity))
             }
         }
         .defaultBackground()
