@@ -15,7 +15,12 @@ struct ExampleList: View {
                 .foregroundColor(.secondary)
 
                 Link(destination: URL(string: "https://movingparts.io/pow")!) {
-                    Label("Pow Website", systemImage: "safari")
+                    ViewThatFits {
+                        Label("Pow Website and Licensing Options", systemImage: "safari")
+                        Label("Pow Website & Licensing Options", systemImage: "safari")
+                        Label("Pow Website & Licensing", systemImage: "safari")
+                        Label("Pow Website", systemImage: "safari")
+                    }
                 }
 
                 Link(destination: URL(string: "https://github.com/movingparts-io/Pow-Examples")!) {
