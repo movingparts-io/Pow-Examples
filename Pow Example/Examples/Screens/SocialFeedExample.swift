@@ -78,6 +78,8 @@ struct SocialFeedExample: View, Example {
 
     var buttonBar: some View {
         HStack(alignment: .firstTextBaseline, spacing: 12) {
+            let pop = SoundEffect("pop1", "pop2", "pop3", "pop4", "pop5")
+
             Button {
                 isLiked.toggle()
             } label: {
@@ -97,6 +99,9 @@ struct SocialFeedExample: View, Example {
                 }
             }
             .tint(isLiked ? .red : .gray)
+            .changeEffect(.feedback(pop), value: isLiked, isEnabled: isLiked)
+
+            let sparkle = SoundEffect(isBoosted ? "sparkle.rising" : "sparkle.falling")
 
             Button {
                 isBoosted.toggle()
@@ -120,6 +125,7 @@ struct SocialFeedExample: View, Example {
                 }
             }
             .tint(isBoosted ? .green : .gray)
+            .changeEffect(.feedback(sparkle), value: isBoosted)
 
             Button {
                 clapCount += 1
@@ -144,7 +150,10 @@ struct SocialFeedExample: View, Example {
                         )
                 }
             }
+            .changeEffect(.feedback(pop), value: clapCount)
             .tint(clapCount > 202 ? .blue : .gray)
+
+            let pick = SoundEffect(isBookmarked ? "pick.rising" : "pick.falling")
 
             Button {
                 isBookmarked.toggle()
@@ -160,6 +169,7 @@ struct SocialFeedExample: View, Example {
             }
             .tint(isBookmarked ? .orange : .gray)
             .animation(.spring(response: 0.4, dampingFraction: 1), value: isBookmarked)
+            .changeEffect(.feedback(pick), value: isBookmarked)
         }
     }
 
