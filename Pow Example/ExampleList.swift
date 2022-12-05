@@ -54,6 +54,7 @@ struct ExampleList: View {
                 RiseExample.navigationLink
                 ShakeExample.navigationLink
                 ShineExample.navigationLink
+                SoundEffectExample.navigationLink
                 SpinExample.navigationLink
                 SprayExample.navigationLink
             } header: {
