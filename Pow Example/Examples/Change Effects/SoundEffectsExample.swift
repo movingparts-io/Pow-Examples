@@ -8,48 +8,30 @@ struct SoundEffectExample: View, Example {
         // copy of Pow.
         ScrollView {
             VStack {
-                Group {
-                    GroupBox("Errors") {
-                        HStack {
-                            SoundEffectPad("Not Found", SoundEffect("notfound"))
-                            SoundEffectPad("Pluck", SoundEffect("pluck"))
-                            SoundEffectPad("Pong", SoundEffect("pong"))
-                            SoundEffectPad("Ping", SoundEffect("ping"))
-                        }
+                GroupBox("Alerts") {
+                    HStack {
+                        SoundEffectPad("Not Found", SoundEffect("notfound"))
+                        SoundEffectPad("Pluck", SoundEffect("pluck"))
+                        SoundEffectPad("Pong", SoundEffect("pong"))
+                        SoundEffectPad("Ping", SoundEffect("ping"))
                     }
+                }
 
-                    GroupBox("Undo") {
-                        HStack {
-                            SoundEffectPad("Brush", SoundEffect("brush"))
-                            SoundEffectPad("Shake", SoundEffect("shake"))
-                            SoundEffectPad("Swipe", SoundEffect("swipe"))
-                            SoundEffectPad("Swish", SoundEffect("swish"))
-                        }
-
-                        HStack {
-                            SoundEffectPad("Wip", SoundEffect("wip"))
-                            SoundEffectPad("Whooop", SoundEffect("whop"))
-                            SoundEffectPad("Detach", SoundEffect("detach"))
-                            SoundEffectPad("Detach", SoundEffect("detach")).hidden()
-                        }
+                GroupBox("Blips") {
+                    HStack {
+                        SoundEffectPad("Boop", SoundEffect("boop"))
+                        SoundEffectPad("Beep", SoundEffect("beep"))
+                        SoundEffectPad("Biip", SoundEffect("biip"))
+                        SoundEffectPad("Biip", SoundEffect("biip")).hidden()
                     }
+                }
 
-                    GroupBox("Short") {
-                        HStack {
-                            SoundEffectPad("Boop", SoundEffect("boop"))
-                            SoundEffectPad("Beep", SoundEffect("beep"))
-                            SoundEffectPad("Biip", SoundEffect("biip"))
-                            SoundEffectPad("Tock", SoundEffect("tock"))
-                        }
-                    }
-
-                    GroupBox("Plopps") {
-                        HStack {
-                            SoundEffectPad("Plop", SoundEffect("plop"))
-                            SoundEffectPad("Pop", SoundEffect("pop1", "pop2", "pop3", "pop4", "pop5"))
-                            SoundEffectPad("Pop", SoundEffect("pop1")).hidden()
-                            SoundEffectPad("Pop", SoundEffect("pop1")).hidden()
-                        }
+                GroupBox("Clicks & Plops") {
+                    HStack {
+                        SoundEffectPad("Dial", SoundEffect("dial"))
+                        SoundEffectPad("Tock", SoundEffect("tock"))
+                        SoundEffectPad("Plop", SoundEffect("plop"))
+                        SoundEffectPad("Pop", SoundEffect("pop1", "pop2", "pop3", "pop4", "pop5"))
                     }
                 }
 
@@ -59,6 +41,24 @@ struct SoundEffectExample: View, Example {
                         SoundEffectPad("Drip\nFlat", SoundEffect("drip.flat"))
                         SoundEffectPad("Drip\nRising", SoundEffect("drip.rising"))
                         SoundEffectPad("Drip\nFalling", SoundEffect("drip.falling"))
+                    }
+                }
+
+                GroupBox("Glas") {
+                    HStack {
+                        SoundEffectPad("Tink", SoundEffect("tink"))
+                        SoundEffectPad("Zing", SoundEffect("zing"))
+                        SoundEffectPad("Glass", SoundEffect("glass"))
+                        SoundEffectPad("Tick", SoundEffect("tick"))
+                    }
+                }
+
+                GroupBox("Metal") {
+                    HStack {
+                        SoundEffectPad("Latch", SoundEffect("latch1", "latch2", "latch3", "latch4"))
+                        SoundEffectPad("Lock", SoundEffect("lock1", "lock2", "lock3", "lock4"))
+                        SoundEffectPad("Snap", SoundEffect("snap"))
+                        SoundEffectPad("Snap", SoundEffect("snap")).hidden()
                     }
                 }
 
@@ -77,15 +77,6 @@ struct SoundEffectExample: View, Example {
                     }
                 }
 
-                GroupBox("Tension/Release") {
-                    HStack {
-                        SoundEffectPad("Reel", SoundEffect("reel"))
-                        SoundEffectPad("Reel\nFlat", SoundEffect("reel.flat"))
-                        SoundEffectPad("Reel\nRising", SoundEffect("reel.rising"))
-                        SoundEffectPad("Reel\nFalling", SoundEffect("reel.falling"))
-                    }
-                }
-
                 GroupBox("Results") {
                     HStack {
                         SoundEffectPad("Sparkle", SoundEffect("sparkle"))
@@ -95,21 +86,28 @@ struct SoundEffectExample: View, Example {
                     }
                 }
 
-                GroupBox("Metal") {
+                GroupBox("Tension/Release") {
                     HStack {
-                        SoundEffectPad("Latch", SoundEffect("latch1", "latch2", "latch3", "latch4"))
-                        SoundEffectPad("Lock", SoundEffect("lock1", "lock2", "lock3", "lock4"))
-                        SoundEffectPad("Snap", SoundEffect("snap"))
-                        SoundEffectPad("Dial", SoundEffect("dial"))
+                        SoundEffectPad("Reel", SoundEffect("reel"))
+                        SoundEffectPad("Reel\nFlat", SoundEffect("reel.flat"))
+                        SoundEffectPad("Reel\nRising", SoundEffect("reel.rising"))
+                        SoundEffectPad("Reel\nFalling", SoundEffect("reel.falling"))
                     }
                 }
 
-                GroupBox("Glas") {
+                GroupBox("Undo/Redo") {
                     HStack {
-                        SoundEffectPad("Tink", SoundEffect("tink"))
-                        SoundEffectPad("Zing", SoundEffect("zing"))
-                        SoundEffectPad("Glass", SoundEffect("glass"))
-                        SoundEffectPad("Tick", SoundEffect("tick"))
+                        SoundEffectPad("Brush", SoundEffect("brush"))
+                        SoundEffectPad("Shake", SoundEffect("shake"))
+                        SoundEffectPad("Swipe", SoundEffect("swipe"))
+                        SoundEffectPad("Swish", SoundEffect("swish"))
+                    }
+
+                    HStack {
+                        SoundEffectPad("Wip", SoundEffect("wip"))
+                        SoundEffectPad("Whooop", SoundEffect("whop"))
+                        SoundEffectPad("Detach", SoundEffect("detach"))
+                        SoundEffectPad("Detach", SoundEffect("detach")).hidden()
                     }
                 }
             }
