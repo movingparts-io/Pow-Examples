@@ -39,7 +39,7 @@ struct SoundEffectExample: View, Example {
                             SoundEffectPad("Boop", SoundEffect("boop"))
                             SoundEffectPad("Beep", SoundEffect("beep"))
                             SoundEffectPad("Biip", SoundEffect("biip"))
-                            SoundEffectPad("Biip", SoundEffect("biip")).hidden()
+                            SoundEffectPad("Tock", SoundEffect("tock"))
                         }
                     }
 
