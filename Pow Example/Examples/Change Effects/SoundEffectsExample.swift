@@ -133,6 +133,8 @@ struct SoundEffectExample: View, Example {
     static var icon: Image? {
         Image(systemName: "speaker.wave.2")
     }
+
+    static let isInBeta: Bool = true
 }
 
 private struct SoundEffectPad: View {

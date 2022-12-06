@@ -13,6 +13,8 @@ protocol Example: View {
     static var icon: Image? { get }
 
     static var localPath: LocalPath { get }
+
+    static var isInBeta: Bool { get }
 }
 
 extension Example {
@@ -50,6 +52,23 @@ extension Example {
 
             Label {
                 Text(title)
+
+                if isInBeta {
+                    Spacer()
+
+                    Text("Beta")
+                        .font(.caption2)
+                        .textCase(.uppercase)
+                        .bold()
+                        .foregroundStyle(.secondary)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(.thinMaterial, in: Capsule())
+                        .overlay {
+                            Capsule()
+                                .stroke(.quaternary)
+                        }
+                }
             } icon: {
                 IconView {
                     icon ?? Image(systemName: "wand.and.stars.inverse")
@@ -60,6 +79,8 @@ extension Example {
     }
 
     static var icon: Image? { nil }
+
+    static var isInBeta: Bool { false }
 
     static var description: some View {
         EmptyView()
