@@ -110,6 +110,8 @@ struct CheckoutExample: View, Example {
     static var icon: Image? {
         Image(systemName: "cart")
     }
+
+    static let isInBeta: Bool = true
 }
 
 private struct CartItem: View {
