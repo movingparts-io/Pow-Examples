@@ -56,8 +56,8 @@ extension Example {
                 if isInBeta {
                     Spacer()
 
-                    Text("Beta")
-                        .font(.caption2)
+                    Text("Beta 0.2.0")
+                        .font(.caption2.monospacedDigit())
                         .textCase(.uppercase)
                         .bold()
                         .foregroundStyle(.secondary)
