@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		236B13462940BAFD0022AF1F /* CheckoutExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B13452940BAFD0022AF1F /* CheckoutExample.swift */; };
 		541356DC293E91A000EC0F1A /* SoundEffectsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541356DB293E91A000EC0F1A /* SoundEffectsExample.swift */; };
 		54135714293E941000EC0F1A /* pick.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 54135708293E93D600EC0F1A /* pick.m4a */; };
 		54135715293E941000EC0F1A /* reel.falling.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 541356E4293E93D400EC0F1A /* reel.falling.m4a */; };
@@ -100,6 +101,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		236B13452940BAFD0022AF1F /* CheckoutExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutExample.swift; sourceTree = "<group>"; };
 		541356DB293E91A000EC0F1A /* SoundEffectsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffectsExample.swift; sourceTree = "<group>"; };
 		541356DD293E93D300EC0F1A /* biip.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = biip.m4a; sourceTree = "<group>"; };
 		541356DE293E93D300EC0F1A /* reel.flat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = reel.flat.m4a; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 		549BF5F6293642BE00B2DCCF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				236B13452940BAFD0022AF1F /* CheckoutExample.swift */,
 				549BF5F4293642BC00B2DCCF /* SocialFeedExample.swift */,
 			);
 			path = Screens;
@@ -516,6 +519,7 @@
 				546A29C6292A4BC100A80DE2 /* JumpExample.swift in Sources */,
 				546A29AA292A397100A80DE2 /* BlurExample.swift in Sources */,
 				546A29A0292A341700A80DE2 /* Example.swift in Sources */,
+				236B13462940BAFD0022AF1F /* CheckoutExample.swift in Sources */,
 				546A29BC292A414A00A80DE2 /* SnapshotExample.swift in Sources */,
 				54A962302934CC4400BBD5FE /* GithubButton.swift in Sources */,
 				546A29B4292A401500A80DE2 /* PopExample.swift in Sources */,
