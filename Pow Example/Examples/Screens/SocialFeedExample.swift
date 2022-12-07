@@ -41,7 +41,7 @@ struct SocialFeedExample: View, Example {
                         }
                         .padding(.top, 3)
 
-                        Text("Use Pow's Chage Effects to give your buttons a little extra flair.")
+                        Text("Use Pow's Change Effects to give your buttons a little extra flair.")
 
                         Text("Try it on these buttons here:")
                     }
