@@ -747,8 +747,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/movingparts-io/Pow";
 			requirement = {
-				branch = release/0.2.0;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
