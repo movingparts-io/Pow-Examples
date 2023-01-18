@@ -4,7 +4,6 @@ import SwiftUI
 struct ShineExample: View, Example {
     @State var name = ""
 
-    @State var delayedIsEmpty = true
 
     var body: some View {
         ZStack {
@@ -21,17 +20,7 @@ struct ShineExample: View, Example {
                     Spacer()
                 }
                 .disabled(name.isEmpty)
-                .animation(.easeInOut, value: name.isEmpty)
-                .changeEffect(.shine, value: delayedIsEmpty, isEnabled: !name.isEmpty)
-                .onChange(of: name.isEmpty) { isEmpty in
-                    if isEmpty {
-                        delayedIsEmpty = isEmpty
-                    } else {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                            delayedIsEmpty = isEmpty
-                        }
-                    }
-                }
+                .changeEffect(.shine.delay(1), value: name.isEmpty, isEnabled: !name.isEmpty)
                 .buttonStyle(.borderedProminent)
             }
             .frame(maxWidth: 320)

@@ -42,6 +42,7 @@ struct ExampleList: View {
 
             Section  {
                 SocialFeedExample.navigationLink
+                CheckoutExample.navigationLink
             } header: {
                 Label("Screens", systemImage: "iphone")
             } footer: {
@@ -54,6 +55,7 @@ struct ExampleList: View {
                 RiseExample.navigationLink
                 ShakeExample.navigationLink
                 ShineExample.navigationLink
+                SoundEffectExample.navigationLink
                 SpinExample.navigationLink
                 SprayExample.navigationLink
             } header: {
