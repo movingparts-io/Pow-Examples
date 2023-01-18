@@ -111,7 +111,7 @@ struct CheckoutExample: View, Example {
         Image(systemName: "cart")
     }
 
-    static let isInBeta: Bool = true
+    static let newIn2_0: Bool = true
 }
 
 private struct CartItem: View {

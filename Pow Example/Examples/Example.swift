@@ -14,7 +14,7 @@ protocol Example: View {
 
     static var localPath: LocalPath { get }
 
-    static var isInBeta: Bool { get }
+    static var newIn2_0: Bool { get }
 }
 
 extension Example {
@@ -52,22 +52,27 @@ extension Example {
 
             Label {
                 Text(title)
+                    .layoutPriority(1)
 
-                if isInBeta {
-                    Spacer()
+                if newIn2_0 {
+                    Spacer(minLength: 0)
 
-                    Text("Beta 0.2.0")
-                        .font(.caption2.monospacedDigit())
-                        .textCase(.uppercase)
-                        .bold()
-                        .foregroundStyle(.secondary)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 4)
-                        .background(.thinMaterial, in: Capsule())
-                        .overlay {
-                            Capsule()
-                                .stroke(.quaternary)
-                        }
+                    ViewThatFits {
+                        Text("New in 0.2.0").fixedSize()
+                        Text("0.2.0").fixedSize()
+                    }
+                    .dynamicTypeSize(...DynamicTypeSize.accessibility1)
+                    .font(.caption2.monospacedDigit())
+                    .textCase(.uppercase)
+                    .bold()
+                    .foregroundStyle(.secondary)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+                    .background(.thinMaterial, in: Capsule())
+                    .overlay {
+                        Capsule()
+                            .stroke(.quaternary)
+                    }
                 }
             } icon: {
                 IconView {
@@ -80,7 +85,7 @@ extension Example {
 
     static var icon: Image? { nil }
 
-    static var isInBeta: Bool { false }
+    static var newIn2_0: Bool { false }
 
     static var description: some View {
         EmptyView()

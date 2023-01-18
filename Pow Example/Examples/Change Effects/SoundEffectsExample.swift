@@ -132,7 +132,7 @@ struct SoundEffectExample: View, Example {
         Image(systemName: "speaker.wave.2")
     }
 
-    static let isInBeta: Bool = true
+    static let newIn2_0: Bool = true
 }
 
 private struct SoundEffectPad: View {
