@@ -59,19 +59,25 @@ struct CheckoutExample: View, Example {
         }
         .listStyle(.plain)
         .navigationTitle("")
+        #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
+        #endif
         .animation(.default, value: quantity != 0)
         .toolbar {
             if quantity == 0 {
+                #if os(iOS)
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Undo") {
                         quantity = 1
                     }
                 }
+                #endif
             }
         }
+        #if os(iOS)
         .changeEffect(.feedback(SoundEffect("whop")), value: quantity == 0, isEnabled: quantity == 0)
         .changeEffect(.feedback(SoundEffect("wip")), value: quantity != 0, isEnabled: quantity != 0)
+        #endif
         .safeAreaInset(edge: .bottom, spacing: 0) {
             VStack(spacing: 16) {
                 VStack(alignment: .leading, spacing: 0) {
@@ -128,8 +134,10 @@ private struct CartItem: View {
                 .alignmentGuide(.listRowSeparatorLeading) { dimensions in
                     dimensions[.leading]
                 }
+                #if os(iOS)
                 .changeEffect(.feedback(SoundEffect("beep")), value: quantity, isEnabled: quantity > lastQuantity && quantity > 1)
                 .changeEffect(.feedback(SoundEffect("boop")), value: quantity, isEnabled: quantity < lastQuantity && quantity > 0)
+                #endif
                 .onChange(of: quantity) { newValue in
                     lastQuantity = quantity
                 }
@@ -222,9 +230,11 @@ struct PayButton: View {
         .tint(status == .failed ? .red : status == .succeeded ? .green : nil)
         .allowsHitTesting(status == .initial)
         .changeEffect(.shake(rate: .fast), value: status == .failed, isEnabled: status == .failed)
+        #if os(iOS)
         .changeEffect(.feedback(SoundEffect("plop")), value: status == .inProgress, isEnabled: status == .inProgress)
         .changeEffect(.feedback(SoundEffect("sparkle")), value: status == .succeeded, isEnabled: status == .succeeded)
         .changeEffect(.feedback(SoundEffect("notfound")), value: status == .failed, isEnabled: status == .failed)
+        #endif
     }
 }
 
@@ -269,7 +279,9 @@ struct CheckoutExample_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             CheckoutExample()
+                #if os(iOS)
                 .toolbar(.visible, for: .navigationBar)
+                #endif
         }
     }
 }

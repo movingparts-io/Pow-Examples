@@ -127,6 +127,7 @@ struct IconView<Content: View>: View {
     var colorScheme
 
     var body: some View {
+        #if os(iOS)
         ZStack {
             Rectangle()
                 .fill(.primary)
@@ -147,6 +148,10 @@ struct IconView<Content: View>: View {
                 .strokeBorder(.white.opacity(0.1), lineWidth: 0.5)
                 .blendMode(.plusLighter)
         }
+        #else
+        content
+            .symbolRenderingMode(.monochrome)
+        #endif
     }
 }
 

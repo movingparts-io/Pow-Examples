@@ -1,3 +1,4 @@
+#if os(iOS)
 import Pow
 import SwiftUI
 
@@ -180,3 +181,4 @@ struct SoundEffectExample_Previews: PreviewProvider {
         SoundEffectExample()
     }
 }
+#endif

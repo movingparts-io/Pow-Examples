@@ -98,6 +98,7 @@
 		546A29D4292A6B1200A80DE2 /* SprayExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29D3292A6B1200A80DE2 /* SprayExample.swift */; };
 		549BF5F5293642BC00B2DCCF /* SocialFeedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF5F4293642BC00B2DCCF /* SocialFeedExample.swift */; };
 		54A962302934CC4400BBD5FE /* GithubButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A9622F2934CC4400BBD5FE /* GithubButton.swift */; };
+		54CFF812297EEE220033F113 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CFF811297EEE220033F113 /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -192,6 +193,7 @@
 		546A29D3292A6B1200A80DE2 /* SprayExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayExample.swift; sourceTree = "<group>"; };
 		549BF5F4293642BC00B2DCCF /* SocialFeedExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialFeedExample.swift; sourceTree = "<group>"; };
 		54A9622F2934CC4400BBD5FE /* GithubButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubButton.swift; sourceTree = "<group>"; };
+		54CFF811297EEE220033F113 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		54D37CAD292F9C4A00788E8A /* Pow-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Pow-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -316,6 +318,7 @@
 				546A29C3292A4B9000A80DE2 /* Transitions */,
 				546A29C4292A4B9F00A80DE2 /* Change Effects */,
 				549BF5F6293642BE00B2DCCF /* Screens */,
+				54CFF811297EEE220033F113 /* AboutView.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 			files = (
 				546A298C292A31BB00A80DE2 /* ExampleList.swift in Sources */,
 				546A29CE292A591F00A80DE2 /* ShineExample.swift in Sources */,
+				54CFF812297EEE220033F113 /* AboutView.swift in Sources */,
 				546A29C0292A420F00A80DE2 /* SwooshExample.swift in Sources */,
 				546A29BA292A40D800A80DE2 /* PoofExample.swift in Sources */,
 				546A29B2292A3ED800A80DE2 /* GlareExample.swift in Sources */,
@@ -677,9 +681,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.movingparts.Pow-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -710,9 +718,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.movingparts.Pow-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
