@@ -1,45 +1,20 @@
 import Pow
-import MessageUI
 import SwiftUI
 
 struct ExampleList: View {
     var body: some View {
         List {
+            #if os(iOS)
             Section {
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("This is the official example app for Pow, the Surprise and Delight framework for SwiftUI.")
-
-                    Text("Tap the individual examples to see the effects and transitions in action.")
-
-                    Text("**Note:** While this app requires iOS 16, Pow itself supports iOS 15 and above.")
-                }
-                .font(.subheadline.leading(.loose))
-                .foregroundColor(.primary)
-
-                Link(destination: URL(string: "https://movingparts.io/pow")!) {
-                    ViewThatFits {
-                        Label("Pow Website and Licensing Options", systemImage: "safari")
-                        Label("Pow Website & Licensing Options", systemImage: "safari")
-                        Label("Pow Website & Licensing", systemImage: "safari")
-                        Label("Pow Website", systemImage: "safari")
-                    }
-                }
-
-                Link(destination: URL(string: "https://github.com/movingparts-io/Pow-Examples")!) {
-                    ViewThatFits {
-                        Label("GitHub Repository for this App", systemImage: "terminal")
-                        Label("GitHub Repo for this App", systemImage: "terminal")
-                        Label("Repo for this App", systemImage: "terminal")
-                    }
-                }
-
-                if MFMailComposeViewController.canSendMail() {
-                    Link(destination: URL(string: "mailto:hello@movingparts.io")!) {
-                        Label("Support", systemImage: "envelope")
-                    }
-                }
+                AboutView()
             }
+            #else
+            NavigationLink("About Pow") {
+                DecoratedAboutView()
+            }
+            #endif
 
+            #if os(iOS)
             Section  {
                 SocialFeedExample.navigationLink
                 CheckoutExample.navigationLink
@@ -48,6 +23,7 @@ struct ExampleList: View {
             } footer: {
                 Text("Pre-composed screens that show how to use Pow in context. Use them as inspiration for your app.")
             }
+            #endif
 
             Section  {
                 JumpExample.navigationLink
@@ -55,7 +31,9 @@ struct ExampleList: View {
                 RiseExample.navigationLink
                 ShakeExample.navigationLink
                 ShineExample.navigationLink
+                #if os(iOS)
                 SoundEffectExample.navigationLink
+                #endif
                 SpinExample.navigationLink
                 SprayExample.navigationLink
             } header: {
@@ -126,7 +104,11 @@ struct InfoButton<T: Example>: View {
     @Environment(\.presentInfoAction)
     var presentInfoAction
 
+    @State
+    var isPopoverPresented = false
+
     var body: some View {
+        #if os(iOS)
         if let presentInfoAction {
             Button {
                 presentInfoAction(type)
@@ -134,6 +116,23 @@ struct InfoButton<T: Example>: View {
                 Label("About", systemImage: "info.circle")
             }
         }
+        #else
+        Button {
+            isPopoverPresented.toggle()
+        } label: {
+            Label("About", systemImage: "info.circle")
+        }
+        .popover(isPresented: $isPopoverPresented, arrowEdge: .bottom) {
+            ScrollView {
+                VStack {
+                    type.erasedDescription
+                }
+                .padding()
+            }
+            .frame(maxWidth: 500)
+        }
+        .help("About")
+        #endif
     }
 }
 

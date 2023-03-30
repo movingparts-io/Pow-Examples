@@ -13,28 +13,39 @@ struct PowExampleApp: App {
 
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                ExampleList()
+            Group {
+                #if os(iOS)
+                NavigationView {
+                    ExampleList()
+                }
+                .sheet(item: $presentedType) { t in
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text(t.type.title).font(.title.bold())
+
+                            GithubButton(t.type.localPath)
+                                .controlSize(.small)
+                                .buttonStyle(.bordered)
+
+                            t.type.erasedDescription
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
+                    }
+                    .presentationDetents([.medium])
+                }
+                #else
+                NavigationSplitView {
+                    ExampleList()
+                        .frame(minWidth: 250)
+                } detail: {
+                    DecoratedAboutView()
+                }
+                #endif
             }
             .environment(\.presentInfoAction, PresentInfoAction {
                 presentedType = Presentation(type: $0)
             })
-            .sheet(item: $presentedType) { t in
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 12) {
-                        Text(t.type.title).font(.title.bold())
-
-                        GithubButton(t.type.localPath)
-                            .controlSize(.small)
-                            .buttonStyle(.bordered)
-
-                        t.type.erasedDescription
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-                }
-                .presentationDetents([.medium])
-            }
         }
     }
 }

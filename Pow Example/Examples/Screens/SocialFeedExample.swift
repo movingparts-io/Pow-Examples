@@ -73,12 +73,20 @@ struct SocialFeedExample: View, Example {
         .safeAreaInset(edge: .bottom, spacing: 0) {
             tabBar
         }
+        #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
+        #endif
     }
 
     var buttonBar: some View {
         HStack(alignment: .firstTextBaseline, spacing: 12) {
+            #if os(iOS)
             let pop = SoundEffect("pop1", "pop2", "pop3", "pop4", "pop5")
+
+            let sparkle = SoundEffect(isBoosted ? "sparkle.rising" : "sparkle.falling")
+
+            let pick = SoundEffect(isBookmarked ? "pick.rising" : "pick.falling")
+            #endif
 
             Button {
                 isLiked.toggle()
@@ -99,9 +107,9 @@ struct SocialFeedExample: View, Example {
                 }
             }
             .tint(isLiked ? .red : .gray)
+            #if os(iOS)
             .changeEffect(.feedback(pop), value: isLiked, isEnabled: isLiked)
-
-            let sparkle = SoundEffect(isBoosted ? "sparkle.rising" : "sparkle.falling")
+            #endif
 
             Button {
                 isBoosted.toggle()
@@ -125,7 +133,9 @@ struct SocialFeedExample: View, Example {
                 }
             }
             .tint(isBoosted ? .green : .gray)
+            #if os(iOS)
             .changeEffect(.feedback(sparkle), value: isBoosted)
+            #endif
 
             Button {
                 clapCount += 1
@@ -150,10 +160,10 @@ struct SocialFeedExample: View, Example {
                         )
                 }
             }
+            #if os(iOS)
             .changeEffect(.feedback(pop), value: clapCount)
+            #endif
             .tint(clapCount > 202 ? .blue : .gray)
-
-            let pick = SoundEffect(isBookmarked ? "pick.rising" : "pick.falling")
 
             Button {
                 isBookmarked.toggle()
@@ -169,7 +179,9 @@ struct SocialFeedExample: View, Example {
             }
             .tint(isBookmarked ? .orange : .gray)
             .animation(.spring(response: 0.4, dampingFraction: 1), value: isBookmarked)
+            #if os(iOS)
             .changeEffect(.feedback(pick), value: isBookmarked)
+            #endif
         }
     }
 

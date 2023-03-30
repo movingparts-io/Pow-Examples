@@ -5,6 +5,9 @@ struct GithubButton: View {
 
     let baseURL = URL(string: "https://github.com/movingparts-io/Pow-Examples/blob/main/")!
 
+    @Environment(\.openURL)
+    var openURL
+
     init(_ localPath: LocalPath) {
         self.localPath = localPath
     }
@@ -17,12 +20,23 @@ struct GithubButton: View {
 
             let url = baseURL.appendingPathComponent(relative)
 
-            Link(destination: url) {
-                ViewThatFits {
-                    Label("Show Example on GitHub", systemImage: "terminal")
-                    Label("Show on GitHub", systemImage: "terminal")
+            Group {
+                #if os(iOS)
+                Link(destination: url) {
+                    ViewThatFits {
+                        Label("Show Example on GitHub", systemImage: "terminal")
+                        Label("Show on GitHub", systemImage: "terminal")
+                    }
                 }
+                #else
+                Button {
+                    openURL(url)
+                } label: {
+                    Label("Show Example on GitHub", systemImage: "terminal")
+                }
+                #endif
             }
+            .help("Show Example on GitHub")
         }
     }
 }
