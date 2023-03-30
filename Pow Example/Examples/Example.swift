@@ -14,7 +14,9 @@ protocol Example: View {
 
     static var localPath: LocalPath { get }
 
-    static var newIn2_0: Bool { get }
+    static var newIn0_2_0: Bool { get }
+
+    static var newIn0_3_0: Bool { get }
 }
 
 extension Example {
@@ -54,25 +56,16 @@ extension Example {
                 Text(title)
                     .layoutPriority(1)
 
-                if newIn2_0 {
-                    Spacer(minLength: 0)
+                if newIn0_2_0 {
+                    Spacer()
 
-                    ViewThatFits {
-                        Text("New in 0.2.0").fixedSize()
-                        Text("0.2.0").fixedSize()
-                    }
-                    .dynamicTypeSize(...DynamicTypeSize.accessibility1)
-                    .font(.caption2.monospacedDigit())
-                    .textCase(.uppercase)
-                    .bold()
-                    .foregroundStyle(.secondary)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 4)
-                    .background(.thinMaterial, in: Capsule())
-                    .overlay {
-                        Capsule()
-                            .stroke(.quaternary)
-                    }
+                    NewBadge("0.2.0")
+                }
+
+                if newIn0_3_0 {
+                    Spacer()
+
+                    NewBadge("0.3.0")
                 }
             } icon: {
                 IconView {
@@ -85,7 +78,9 @@ extension Example {
 
     static var icon: Image? { nil }
 
-    static var newIn2_0: Bool { false }
+    static var newIn0_2_0: Bool { false }
+
+    static var newIn0_3_0: Bool { false }
 
     static var description: some View {
         EmptyView()
@@ -113,6 +108,33 @@ extension View {
                     }
                 }
             }
+    }
+}
+
+struct NewBadge: View {
+    var version: String
+
+    init(_ version: String) {
+        self.version = version
+    }
+
+    var body: some View {
+        ViewThatFits {
+            Text("New in \(version)").fixedSize()
+            Text("\(version)").fixedSize()
+        }
+        .dynamicTypeSize(...DynamicTypeSize.accessibility1)
+        .font(.caption2.monospacedDigit())
+        .textCase(.uppercase)
+        .bold()
+        .foregroundStyle(.secondary)
+        .padding(.horizontal, 8)
+        .padding(.vertical, 4)
+        .background(.thinMaterial, in: Capsule())
+        .overlay {
+            Capsule()
+                .stroke(.quaternary)
+        }
     }
 }
 
