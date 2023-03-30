@@ -98,6 +98,10 @@
 		546A29D4292A6B1200A80DE2 /* SprayExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29D3292A6B1200A80DE2 /* SprayExample.swift */; };
 		549BF5F5293642BC00B2DCCF /* SocialFeedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF5F4293642BC00B2DCCF /* SocialFeedExample.swift */; };
 		54A962302934CC4400BBD5FE /* GithubButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A9622F2934CC4400BBD5FE /* GithubButton.swift */; };
+		54F15E5029D598150054690B /* RepeatExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F15E4F29D598150054690B /* RepeatExample.swift */; };
+		54F15E5229D59A920054690B /* SmokeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F15E5129D59A920054690B /* SmokeExample.swift */; };
+		54F15E5429D59D250054690B /* PulseExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F15E5329D59D250054690B /* PulseExample.swift */; };
+		54F15E5629D5A0D70054690B /* GlowExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F15E5529D5A0D70054690B /* GlowExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +197,10 @@
 		549BF5F4293642BC00B2DCCF /* SocialFeedExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialFeedExample.swift; sourceTree = "<group>"; };
 		54A9622F2934CC4400BBD5FE /* GithubButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubButton.swift; sourceTree = "<group>"; };
 		54D37CAD292F9C4A00788E8A /* Pow-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Pow-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
+		54F15E4F29D598150054690B /* RepeatExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatExample.swift; sourceTree = "<group>"; };
+		54F15E5129D59A920054690B /* SmokeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeExample.swift; sourceTree = "<group>"; };
+		54F15E5329D59D250054690B /* PulseExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseExample.swift; sourceTree = "<group>"; };
+		54F15E5529D5A0D70054690B /* GlowExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +323,7 @@
 				546A299F292A341700A80DE2 /* Example.swift */,
 				546A29C3292A4B9000A80DE2 /* Transitions */,
 				546A29C4292A4B9F00A80DE2 /* Change Effects */,
+				54F15E4E29D598020054690B /* Conditional Effects */,
 				549BF5F6293642BE00B2DCCF /* Screens */,
 			);
 			path = Examples;
@@ -353,9 +362,11 @@
 				546A29C9292A4DBD00A80DE2 /* RiseExample.swift */,
 				546A29CB292A559A00A80DE2 /* ShakeExample.swift */,
 				546A29CD292A591F00A80DE2 /* ShineExample.swift */,
+				54F15E5529D5A0D70054690B /* GlowExample.swift */,
 				541356DB293E91A000EC0F1A /* SoundEffectsExample.swift */,
 				546A29D1292A68E100A80DE2 /* SpinExample.swift */,
 				546A29D3292A6B1200A80DE2 /* SprayExample.swift */,
+				54F15E5329D59D250054690B /* PulseExample.swift */,
 			);
 			path = "Change Effects";
 			sourceTree = "<group>";
@@ -367,6 +378,15 @@
 				549BF5F4293642BC00B2DCCF /* SocialFeedExample.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		54F15E4E29D598020054690B /* Conditional Effects */ = {
+			isa = PBXGroup;
+			children = (
+				54F15E4F29D598150054690B /* RepeatExample.swift */,
+				54F15E5129D59A920054690B /* SmokeExample.swift */,
+			);
+			path = "Conditional Effects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,6 +521,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				546A298C292A31BB00A80DE2 /* ExampleList.swift in Sources */,
+				54F15E5229D59A920054690B /* SmokeExample.swift in Sources */,
 				546A29CE292A591F00A80DE2 /* ShineExample.swift in Sources */,
 				546A29C0292A420F00A80DE2 /* SwooshExample.swift in Sources */,
 				546A29BA292A40D800A80DE2 /* PoofExample.swift in Sources */,
@@ -519,6 +540,7 @@
 				546A29C6292A4BC100A80DE2 /* JumpExample.swift in Sources */,
 				546A29AA292A397100A80DE2 /* BlurExample.swift in Sources */,
 				546A29A0292A341700A80DE2 /* Example.swift in Sources */,
+				54F15E5629D5A0D70054690B /* GlowExample.swift in Sources */,
 				236B13462940BAFD0022AF1F /* CheckoutExample.swift in Sources */,
 				546A29BC292A414A00A80DE2 /* SnapshotExample.swift in Sources */,
 				54A962302934CC4400BBD5FE /* GithubButton.swift in Sources */,
@@ -526,10 +548,12 @@
 				546A29CC292A559A00A80DE2 /* ShakeExample.swift in Sources */,
 				546A29AE292A3D8900A80DE2 /* FlipExample.swift in Sources */,
 				546A29A6292A355400A80DE2 /* BoingExample.swift in Sources */,
+				54F15E5429D59D250054690B /* PulseExample.swift in Sources */,
 				546A299B292A332900A80DE2 /* AnvilExample.swift in Sources */,
 				546A29A2292A349900A80DE2 /* BlindsExample.swift in Sources */,
 				546A29AC292A3B9D00A80DE2 /* FilmExposureExample.swift in Sources */,
 				546A29B0292A3DA800A80DE2 /* FlickerExample.swift in Sources */,
+				54F15E5029D598150054690B /* RepeatExample.swift in Sources */,
 				546A29D4292A6B1200A80DE2 /* SprayExample.swift in Sources */,
 				546A29CA292A4DBD00A80DE2 /* RiseExample.swift in Sources */,
 				546A29B8292A40B000A80DE2 /* MoveExample.swift in Sources */,
@@ -747,8 +771,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/movingparts-io/Pow";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.0;
+				branch = release/0.3.0;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

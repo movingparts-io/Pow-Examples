@@ -50,6 +50,17 @@ struct ExampleList: View {
             }
 
             Section  {
+                RepeatExample.navigationLink
+                SmokeExample.navigationLink
+            } header: {
+                Label("Conditional Effects", systemImage: "checklist")
+            } footer: {
+                Text("Conditional Effects are triggered continously, as long as a condition is met.")
+            }
+
+            Section  {
+                GlowExample.navigationLink
+                PulseExample.navigationLink
                 JumpExample.navigationLink
                 PingExample.navigationLink
                 RiseExample.navigationLink
@@ -61,7 +72,7 @@ struct ExampleList: View {
             } header: {
                 Label("Change Effects", systemImage: "sparkles")
             } footer: {
-                Text("Change effects can be triggered whenever a value changes.")
+                Text("Change Effects can be triggered whenever a value changes.")
             }
 
             Section {

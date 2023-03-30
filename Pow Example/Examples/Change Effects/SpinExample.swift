@@ -14,7 +14,7 @@ struct SpinExample: View, Example {
             } icon: {
                 Image(systemName: "hand.thumbsup.fill")
                     .foregroundStyle(.blue.gradient)
-                    .changeEffect(.spin(axis: (0, 1, -0.05), anchor: UnitPoint(x: 0.5, y: 0.5), perspective: 0.6), value: changes)
+                    .changeEffect(.spin(axis: (0, 1, -0.05), anchor: UnitPoint(x: 0.5, y: 0.5), perspective: 0.6, rate: .fast), value: changes)
             }
             .padding(.vertical, 8)
             .padding(.leading, 16)
@@ -40,6 +40,7 @@ struct SpinExample: View, Example {
             - `anchor`: The location with a default of center that defines a point in 3D space about which the rotation is anchored.
             - `anchorZ`: The location with a default of 0 that defines a point in 3D space about which the rotation is anchored.
             - `perspective`: The relative vanishing point with a default of 1 / 6 for this rotation.
+            - `rate`: How fast the the view spins.
         """)
     }
 
