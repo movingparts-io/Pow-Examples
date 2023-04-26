@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/movingparts-io/Pow",
       "state" : {
-        "branch" : "release/0.3.0",
-        "revision" : "8cb399c1749cd2344799f3697b7e6a6ce8a2a1ed"
+        "revision" : "165d6d7144a27d2d140c179d8522ea20a14026e7",
+        "version" : "0.3.0"
       }
     }
   ],
