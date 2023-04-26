@@ -50,6 +50,7 @@ struct ExampleList: View {
             }
 
             Section  {
+                PushDownExample.navigationLink
                 RepeatExample.navigationLink
                 SmokeExample.navigationLink
             } header: {

@@ -98,6 +98,7 @@
 		546A29D4292A6B1200A80DE2 /* SprayExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A29D3292A6B1200A80DE2 /* SprayExample.swift */; };
 		549BF5F5293642BC00B2DCCF /* SocialFeedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF5F4293642BC00B2DCCF /* SocialFeedExample.swift */; };
 		54A962302934CC4400BBD5FE /* GithubButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A9622F2934CC4400BBD5FE /* GithubButton.swift */; };
+		54B7259729F9C70900C17B99 /* PushDownExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B7259629F9C70900C17B99 /* PushDownExample.swift */; };
 		54F15E5029D598150054690B /* RepeatExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F15E4F29D598150054690B /* RepeatExample.swift */; };
 		54F15E5229D59A920054690B /* SmokeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F15E5129D59A920054690B /* SmokeExample.swift */; };
 		54F15E5429D59D250054690B /* PulseExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F15E5329D59D250054690B /* PulseExample.swift */; };
@@ -196,6 +197,7 @@
 		546A29D3292A6B1200A80DE2 /* SprayExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayExample.swift; sourceTree = "<group>"; };
 		549BF5F4293642BC00B2DCCF /* SocialFeedExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialFeedExample.swift; sourceTree = "<group>"; };
 		54A9622F2934CC4400BBD5FE /* GithubButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubButton.swift; sourceTree = "<group>"; };
+		54B7259629F9C70900C17B99 /* PushDownExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushDownExample.swift; sourceTree = "<group>"; };
 		54D37CAD292F9C4A00788E8A /* Pow-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Pow-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
 		54F15E4F29D598150054690B /* RepeatExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatExample.swift; sourceTree = "<group>"; };
 		54F15E5129D59A920054690B /* SmokeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeExample.swift; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 		54F15E4E29D598020054690B /* Conditional Effects */ = {
 			isa = PBXGroup;
 			children = (
+				54B7259629F9C70900C17B99 /* PushDownExample.swift */,
 				54F15E4F29D598150054690B /* RepeatExample.swift */,
 				54F15E5129D59A920054690B /* SmokeExample.swift */,
 			);
@@ -536,6 +539,7 @@
 				546A298A292A31BB00A80DE2 /* PowExampleApp.swift in Sources */,
 				549BF5F5293642BC00B2DCCF /* SocialFeedExample.swift in Sources */,
 				546A299E292A335600A80DE2 /* PlaceholderView.swift in Sources */,
+				54B7259729F9C70900C17B99 /* PushDownExample.swift in Sources */,
 				546A29D0292A676200A80DE2 /* SkidExample.swift in Sources */,
 				546A29C6292A4BC100A80DE2 /* JumpExample.swift in Sources */,
 				546A29AA292A397100A80DE2 /* BlurExample.swift in Sources */,
